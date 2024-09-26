@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <title>Misioneros Virtuales en Español</title>
+    <style>
+        .full-width {
+            width: 100%;
+        }
+        .margin-top {
+            margin-top: 10px; 
+        }
+        .padding {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    </style>
 </head>
-<body>
-    <div class="row animate-box ">
-        <div class=" ">
 
-            <a href="index.html" class="btn btn-primary"><i class="icon-arrow-up2"></i>Home</a>
+<body>
+
+    <div class="container-fluid">
+        <div class="row animate-box">
+            <div class="col-12 col-md-6">
+                <a href="index.html" class="btn btn-primary"><i class="icon-arrow-up2"></i>Retornar al Inicio</a>
+            </div>
+        </div>
+        <div class="row margin-top">
+            <div class="col-12 col-md-6 padding">
+                <iframe id="huggingChatIframe1" src="https://hf.co/chat/assistant/66f5068872ba9058067df6aa"
+                    height="600px" class="full-width"></iframe>
+            </div>
+            <div class="col-12 col-md-6 padding">
+                <iframe id="huggingChatIframe2" src="https://hf.co/chat/assistant/66f5096f12bf95253a0571c9"
+                    height="600px" class="full-width"></iframe>
+            </div>
         </div>
     </div>
-    <iframe id="huggingChatIframe" src="https://hf.co/chat/assistant/66f5068872ba9058067df6aa" width="49%" height="600px"></iframe>
 
-    <iframe id="huggingChatIframe" src="https://hf.co/chat/assistant/66f5096f12bf95253a0571c9" width="49%" height="600px"></iframe>
-
-    
 </body>
+
 </html>
